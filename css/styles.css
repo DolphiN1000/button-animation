@@ -1,0 +1,70 @@
+:root {
+    --main-font-family: "Roboto", sans-serif;
+
+    --main-light-color: #1f2de7;
+    --main-dark-color: #da2828;
+}
+
+* {
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background-color: var (--main-light-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+   
+
+}
+.list {
+    text-decoration: none;
+}
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--main-dark-color);
+    color: var( --main-light-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-decoration: none; */
+    border: 4px solid;
+    background: transparent;
+    cursor: pointer;
+
+
+
+}
+.button::before{
+    content: "";
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    display: block;
+    background: #1f2de7;
+    transition: 300ms ease-in-out;
+}
+.button::after{
+    content: "";
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    display: block;
+    background: #1f2de7;
+    transition: 300ms ease-in-out;
+}
+/* .button::after {
+    .button::before {
+        left:calc(100%-20px);
+    }
+    .button::after{
+        right: calc(100%-20px);
+    }
+} */
